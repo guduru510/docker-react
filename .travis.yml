@@ -1,5 +1,5 @@
-language: generic
-sudo: required
+ language: generic
+ sudo: required
  services:
       - docker
 
@@ -7,4 +7,4 @@ sudo: required
       - docker build -t sravan/docker-react -f Dockerfile.dev .
 
  script:
-      - docker run -e CI=true sravan/docker-react npm run test
+     - docker run -e CI=true sravan/docker-react npm run test
